@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.control-buttons
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(3, 169,244, 0.9);
+}
+
+.control-buttons span
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f44336;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.info_container
+{
+    width: 600px;
+    margin: 20px auto 0;
+    background-color: #f6f6f6; 
+    padding: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    border: 2px solid #2196f3;
+}
+.info_container .name
+{
+    float: left;
+    width: 50%;
+}
+.info_container .tries
+{
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+.memory_game_blocks
+{
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    margin: 20px auto ;
+}
+
+.memory_game_blocks.no-clicking
+{
+    pointer-events: none;
+}
+.memory_game_blocks .game_blocks
+{
+    height: 90px;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 95px;
+    margin: 0 10px 20px;
+}
+.memory_game_blocks .game_blocks .front
+{
+    background-color: #333;
+    line-height: 90px;
+}
+.memory_game_blocks .game_blocks .front:before
+{
+    content: '?';
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+}
+.memory_game_blocks .game_blocks .back
+{
+    background-color: #607d8b;
+    transform: rotateY(180deg);
+}
+.memory_game_blocks .game_blocks .back img
+{
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+}
+.memory_game_blocks .game_blocks .face
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    backface-visibility: hidden;
+    border:2px solid #2196f3;
+}
+.memory_game_blocks .game_blocks.is-flipped,
+.memory_game_blocks .game_blocks.has-match
+{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    pointer-events: none;
+}

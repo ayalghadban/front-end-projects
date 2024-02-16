@@ -1,0 +1,192 @@
+p{
+    color: red;
+    font-size: 50px;
+}
+h2{
+    color: blue;
+}
+.aya
+{
+    color: chocolate;
+}
+.haya {
+    color: purple;
+}
+#sham
+{
+    color: yellow;
+}
+div p{
+    color: orange;
+}
+input
+{
+    background-color: pink;
+}
+input[type="email"]
+{
+    background-color: greenyellow;
+}
+.x
+{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border : 10px black double;
+}
+.test1
+{
+    color: maroon;
+    font-family: tahoma;
+    text-align: center;
+}
+.test1 p{
+    color: magenta;
+    font-family: Arial;
+    line-height: 100px;
+    letter-spacing: 10px;
+    direction: ltr;
+}
+.test1 h1{
+    font-size: 50px;
+    font-weight: 300;
+
+}
+.ibrahim
+{
+    width: 200px;
+    height: 200px;
+    border : 20px black solid;
+    background-color :cadetblue;
+    background-image: url("1.jpg");
+    background-size: 50px 50px; /*النحكم بوضع الصورة ليتناسب مع الديف*/
+    background-repeat: no-repeat; /*لعدم تكرار الصورة في الديف
+    تكرار بشكل افقي repeat-x
+    تكرار بشكل شاقولي repeat-y*/
+   /* background-attachment: fixed; /*نضعها في حال كان الديف كبير جدا 
+    والصورة صغيرة ويوجد سكرول واريد اني كل ما انزل بالسكرول تنزل الصورة معي واقدر اشوفها
+    */
+    background-position: center; /*تحديد مكان الصورة داخل الديف*/
+}
+.name
+{
+    border: 5px solid #000;
+    padding-left: 10px; /*ممكن اعمل لكل الاتجاهات عادي */
+    padding: 15px 20px 30px 40px; /*top right bottom left
+    وقت حط قيمتين بس بتكون القيمة الاولى للاعلى والاسفل والتانية لليمين واليسار*/
+    /*panding هي ازاحة داخلية للديف يعني بتزيح الي بقلب الديف بس ما دخلا بالفريم البراني */
+    margin-top: 20px; /*نفس الباندينغ بالضبط وبتاخد نفس البارميترات*/
+}
+a{
+    text-decoration: underline;
+    color: blueviolet;
+    cursor :copy; /*نوع السهم الي بيطلع وقت وقف على رابط */
+}
+a:hover{
+    color: brown;
+    font-size: 20px;
+} /*للتحكم بالرابط عند الوقوف عليه بالفارة 
+عند وضع visited يتغير لون الموقع عند زيارته*/
+/*الديف عنصر بلوك يعني بياخد سطر كامل لحالو اما السبان ما بتاخد سطر كامل لحالها
+المارجين والباندينغ للعناصر الي متل السبان هنن بس لليمين واليسار
+لتحويل نوع الشغلة نستخدم ديسبلاي
+div :: display:inline
+span :: display:block
+النوع inline-block هو بياخد التنين سوا يعني هو انلاين بس بياخد تاثيرات البلوك كللها */
+
+
+.div1
+{
+    display: none;
+} /*تخفي العنصر كلو مع مكان وجودو */
+.div1 
+{
+    display: hidden; /*تخفي العنصر فقط لكن المكان يبقى موجود */
+}
+
+.overflow
+{
+    width: 200px;
+    height: 200px;
+    background-color: palevioletred;
+    overflow: visible; /*وضع افتراضي انو الزيادة حتضل موجودة ولا الديف صغير الحجم*/
+    overflow: hidden;/*اخفاء الزيادة */
+    overflow: scroll;/*بتعملي سكرول من اليسار ومن تحت ولو كان الوضع تمام*/
+    overflow: auto;/*بتعملي سكرول حسب الحاجة*/
+}
+
+ul
+{
+    list-style-type: decimal;
+    list-style-position: inside; /*الترقيم جوا القائمة يعني شو ما صار تاثيرات ع القائمة بتصير معو */
+    list-style-image: url('');
+    list-style: square inside;
+
+}   
+ul li
+{
+    background-color: lawngreen;
+}
+.count
+{
+    background-color: rebeccapurple;
+}
+.count div
+{
+    float: left;
+    width: 20%;
+}
+/*الفلوت بتخرج الديف من اطار العمل يعني كل شي ممكن ياثر ع الديف بيبطل مفعولو بوجود الفلوت
+متل الباكجراوند بوجود الفلوت ولو حطيت لون للخلفية ما بيشوفو
+*/
+.aya123
+{
+    clear: both;
+}
+.barhomi
+{
+    background-color: blue;
+    width: 100px;
+    position: static;
+    position: relative;
+    top : 100px;/* هون التست 2 ما تحرك من مكانو ولا تاثر فين + مكان التست واحد الاصلي ضل موجود
+     يعني بتزيح الديف وبتغير مكانو عادي وبيضل ضمن اطار عملو الي هو الديف */
+   position: absolute;
+    top: 100px;
+}
+.barhomi1{
+    background-color: yellow;
+    width: 100px;
+}
+.check:checked /*تعيين شغلات عندما اقوم بالضغط على الزر ceheck*/
+{
+    opacity: 0; /*شفافية الزر اعلى قيمة 1 واخفض قمية 0*/
+}
+.text1:focus /*عند الضفط على مربع التكست يظهر لي الفوكس وممكن اتحكم فيه */
+{
+    outline: none; /*في حال قربت من التكست ما بيعملي لون خارجي */
+    border: 2px purple solid;/*يظهر البولد عند الضغط على التكست بوكس*/
+}
+.new::first-letter
+{
+    color: orange;
+}
+.new::first-line
+{
+    color: blue;
+}
+.new::selection
+{
+    background-color: coral;
+    color: white;
+}
+
+/*before , after 
+ هدول للاضافة والتعديل ووضع شغلات بدي ياها قبل او بعد الباراغراف متل content*/
+
+
+/*
+    @media screen and (max width 400px)
+    {}
+    هون بحط الشغلات الي بتلزمني لشاشة احجمها 400 بكسل او اقل
+*/
